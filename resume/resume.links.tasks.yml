@@ -1,0 +1,4 @@
+resume.display_table_list:
+  title: BD Contact
+  route_name: resume.display_table_list
+  base_route: system.admin_content

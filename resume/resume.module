@@ -1,0 +1,14 @@
+<?php
+	drupal_set_message('Hello');
+
+	function resume_theme($existing, $type, $theme, $path) {
+  $variables = array(
+    'loremipsum' => array(
+      'variables' => array(
+        'source_text' => NULL,
+      ),
+      'template' => 'loremipsum',
+    ),
+  );
+  return $variables;
+}

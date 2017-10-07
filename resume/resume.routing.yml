@@ -1,0 +1,36 @@
+resume.add_form:
+  path: /resume/myform
+  defaults:
+    _form: Drupal\resume\Form\ResumeForm
+    _title: Application Form
+  requirements:
+    _permission: 'admin resume form content' 
+
+resume.delete_form:
+  path: /resume/myform/delete/{cid}
+  defaults:
+    _form: Drupal\resume\Form\DeleteForm
+    _title: Application Form Delete
+  requirements:
+    _permission: 'access content'  
+
+resume.display_table_list:
+  path: '/resume/myform/list'
+  defaults:
+    _controller: '\Drupal\resume\Controller\ResumeController::display'
+    _title: Application Form List Display
+  requirements:
+    _permission: 'amymodule test_permission'    
+
+resume.display_table_lists:
+  path: '/mytest'
+  defaults:
+    _controller: '\Drupal\resume\Controller\ResumeController::mytest'
+    _title: Application Form List Displays
+  requirements:
+    _permission: 'amymodule test_permission' 
+
+
+
+
+    

@@ -1,0 +1,7 @@
+resume.add_form:
+  title: 'Add Form'
+  description: 'Add new register form'
+  route_name: resume.add_form
+  #parent: 'system.admin_config_development'
+  parent: 'main'
+  menu_name: main
